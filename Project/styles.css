@@ -10,6 +10,23 @@ body {
   background: #ffffff;
 }
 
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 2.1875rem;
+  padding-bottom: 0px;
+  padding-left: 8rem;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background: #f7f6f6;
+}
+
 .buttondance {
   position: absolute;
   top: 59%;
@@ -40,35 +57,27 @@ header {
   left: 0;
 }
 
-.leftsidebar {
+.leftsidebar-img {
   position: absolute;
   left: 0;
 }
 
+.leftsidebar__whitespace {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+
 .header-left {
   padding-left: 1.25rem;
+  align-self: left;
 }
 
 .header-right {
   padding-right: 25%;
   display: flex;
   align-items: center;
-}
-
-main {
-  display: flex;
-  justify-content: flex-end;
-  min-height: 100vh;
-  background: #f7f6f6;
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  padding: 2.1875rem;
-  padding-left: 8rem;
+  align-self: right;
 }
 
 .card {
@@ -82,13 +91,13 @@ main {
   background-color: #ffffff;
 }
 
-.yellowline {
+.yellowline-img {
   top: 24%;
   position: absolute;
   left: 17%;
 }
 
-.twosquare {
+.twosquare-img {
   position: absolute;
   right: 36%;
   top: 13%;
@@ -113,14 +122,6 @@ main {
   font-size: 12px;
 }
 
-.right-sidebar {
-  background: #dddddd;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  background-color: white;
-}
-
 .bodytext {
   position: absolute;
   left: 260px;
@@ -129,8 +130,7 @@ main {
   padding-left: 5rem;
   line-height: 25px;
 }
-
-.bodytext2 {
+.bodytext__2 {
   position: absolute;
   left: 260px;
   top: 62%;
@@ -138,8 +138,7 @@ main {
   padding-left: 5rem;
   line-height: 25px;
 }
-
-.bodytext3 {
+.bodytext__3 {
   position: absolute;
   left: 260px;
   top: 80%;
@@ -147,32 +146,11 @@ main {
   padding-left: 5rem;
   line-height: 25px;
 }
-
 .bodytext__header {
   font-weight: bold;
 }
 
-.activity-list > * {
-  flex: 0 0 100%;
-}
-
-.blueboy {
-  width: 100px;
-  height: 18%;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  background: #999999;
-  border-top: solid 1px #666666;
-  padding: 1.5625rem;
-}
-
-.header-left {
-  align-self: left;
-}
-
-.header-right {
-  align-self: right;
+.right-sidebar {
+  background: #dddddd;
+  background-color: white;
 }/*# sourceMappingURL=styles.css.map */

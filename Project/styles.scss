@@ -1,3 +1,4 @@
+// CLASSES THAT AFFECT MOST THE PAGE START HERE
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,29 @@ body {
     background: #ffffff;
   }
   
+  
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 2.1875rem;
+    padding-bottom: 0px;
+    padding-left: 8rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100vh;
+    background: #f7f6f6;
+  }
+  // CLASSES THAT AFFECT EVERYTHING END HERE
+  
+  
+  
+  
+  // THE ALMIGHTY BUTTON
   .buttondance{
     position: absolute;
     top:59%;
@@ -17,8 +41,14 @@ body {
     width: 315px;
     height: 55px;
   }
-
-  header {
+ // THE ALL MIGHTY BUTTON ENDS HERE
+  
+ 
+ 
+ 
+ 
+ // NAV BAR STARTS HERE 
+ header {
     display: flex;
     justify-content: space-between;
     height: 3.125rem;
@@ -40,37 +70,37 @@ body {
     left: 0;
   }
 
-  .leftsidebar {
+  .leftsidebar-img {
     position: absolute;
     left: 0;
+  }
+
+  .leftsidebar__whitespace{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
   }
   
   .header-left {
     padding-left: 1.25rem;
+    align-self: left;
   }
   
   .header-right {
     padding-right: 25%;
     display: flex;
     align-items: center;
+    align-self: right;
   }
 
-  main {
-    display: flex;
-    justify-content: flex-end;
-    min-height: 100vh;
-    background: #f7f6f6;
-  }
-  
-  .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 2.1875rem;
-    padding-left: 8rem;
-  }
-  
+ // NAV BAR ENDS HERE
+ 
+ 
+ 
+ 
+ 
+  // HERO CARD START HERE
+
   .card {
     display: flex;
     width: 75%;
@@ -82,13 +112,13 @@ body {
     background-color: #ffffff;
 
   }
-  .yellowline{
+  .yellowline-img{
     top: 24%;
     position: absolute;
     left: 17%;
   }
 
-.twosquare{
+.twosquare-img{
     position: absolute;
     right: 36%;
     top: 13%;
@@ -112,13 +142,13 @@ body {
     font-size: 12px;
   }
   
-  .right-sidebar {
-    background: #dddddd;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    background-color: white;
-  }
+
+//  HERO CARD ENDS HERE
+
+
+
+
+// BODY TEXT STARTS HERE
 
   .bodytext{
     position: absolute;
@@ -127,59 +157,41 @@ body {
     width: 45%;
     padding-left: 5rem;
     line-height: 25px;
-  }
-  .bodytext2{
-    position: absolute;
-    left: 260px;
-    top: 62%;
-    width: 45%;
-    padding-left: 5rem;
-    line-height: 25px;
-  }
-  .bodytext3{
-    position: absolute;
-    left: 260px;
-    top: 80%;
-    width: 45%;
-    padding-left: 5rem;
-    line-height: 25px;
-  }
-  
-  .bodytext__header{
-    font-weight: bold;
-  }
-
-  .activity-list > * {
-    flex: 0 0 100%;
-  }
-  .blueboy{
-    width: 100px;
-    height: 18%;
+    
+    &__2
+    {
+      position: absolute;
+      left: 260px;
+      top: 62%;
+      width: 45%;
+      padding-left: 5rem;
+      line-height: 25px;
+    }
+    &__3
+    { position: absolute;
+      left: 260px;
+      top: 80%;
+      width: 45%;
+      padding-left: 5rem;
+      line-height: 25px;
+    }
+    &__header{
+      font-weight: bold;
+    }
   }
   
-  footer {
-    display: flex;
-    justify-content: space-between;
-    background: #999999;
-    border-top: solid 1px #666666;
-    padding: 1.5625rem;
+// BODY TEXT ENDS HERE
+
+
+
+// RIGHT SIDE BAR (IMAGE) STARTS HERE
+
+.right-sidebar {
+  background: #dddddd;
+  background-color: white;
   }
-  
-  .header-left {
-    align-self: left;
-  }
-  
-  .header-right {
-    align-self: right;
-  }
-  
-  
 
-
-
-
-
-
+  // RIGHT SIDE BAR (IMAGE) ENDS HERE
 
 
 
