@@ -13,12 +13,19 @@
 // });
 
 ////////////////////////////////////////////////////
+
 document.addEventListener("DOMContentLoaded", function() {
   const toggleButton = document.getElementById('toggle-button');
   let currentModeIndex = 0;
   const modes = [
-      { name: "Countdown", className: "alert-message--countdown", action: startCountdownCountdown },
-      { name: "Question", className: "alert-message--question", action: startCountdownQuestion },
+      { name: "SUBMIT", className: "alert-message--countdown", action: Countdown },
+      { name: "SUBMIT", className: "alert-message--question", action: Question },
+      { name: "SUBMIT", className: "alert-message--question", action: Question2 },
+      { name: "SUBMIT", className: "alert-message--question", action: Question3 },
+      { name: "SUBMIT", className: "alert-message--question", action: Question4 },
+      { name: "SUBMIT", className: "alert-message--question", action: Question5 },
+      { name: "SUBMIT", className: "alert-message--countdown", action: Countdown2 },
+      { name: "SUBMIT", className: "alert-message--countdown", action: AboutToRun }
 
   ];
 
@@ -51,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function updateButtonLabel(modeName) {
-      toggleButton.textContent = `Switch to ${modeName} Mode`;
+      toggleButton.textContent = `${modeName}`;
   }
 
-  function startCountdownCountdown() {
+  function Countdown() {
       const { countdownText, alertMessage } = createCustomAlert("alert-message--countdown");
       const customAlert = countdownText.parentElement;
 
@@ -79,40 +86,184 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 1000);
   }
 
-  function startCountdownQuestion() {
-      const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
-      const customAlert = countdownText.parentElement;
+  function Question() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
+    const customAlert = countdownText.parentElement;
 
-      customAlert.style.display = "block";
+    customAlert.style.display = "block";
+    countdownText.textContent = "Are you sure?";
+    customAlert.classList.add("question-alert")
 
-      let count = 5;
-      let remainingTries = 5;
-      countdownText.textContent = `Are you sure? (${remainingTries} more times)`;
+    const yesButton = document.createElement("button");
+    yesButton.textContent = "Yes";
+    yesButton.classList.add("question-button")
 
-      function askAgain() {
-          remainingTries--;
-          countdownText.textContent = `Are you sure? (${remainingTries} more times)`;
+    const noButton = document.createElement("button");
+    noButton.textContent = "No";
+    noButton.classList.add("question-button")
 
-          if (remainingTries <= 0) {
-              clearInterval(countdownInterval);
-              countdownText.style.display = "none";
-              alertMessage.style.display = "block"; 
+    yesButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: Yes";
+    });
 
-              setTimeout(() => {
-                  customAlert.style.display = "none";
-              }, 2000);
-          }
-      }
+    noButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: No";
+    });
 
-      const countdownInterval = setInterval(function () {
-          if (count > 1) {
-              count--;
-              countdownText.textContent = `Are you sure? (${remainingTries} more times)`;
-          } else {
-              count = 5; 
-              askAgain();
-          }
-      }, 1000);
+    customAlert.appendChild(yesButton);
+    customAlert.appendChild(noButton);
+    }
+  function Question2() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
+    const customAlert = countdownText.parentElement;
+
+    customAlert.style.display = "block";
+    countdownText.textContent = "Are you really sure?";
+    customAlert.classList.add("question-alert")
+
+    const yesButton = document.createElement("button");
+    yesButton.textContent = "Yes";
+    yesButton.classList.add("question-button")
+
+    const noButton = document.createElement("button");
+    noButton.textContent = "No";
+    noButton.classList.add("question-button")
+
+    yesButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: Yes";
+    });
+
+    noButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: No";
+    });
+
+    customAlert.appendChild(yesButton);
+    customAlert.appendChild(noButton);
+  }
+
+  function Question3() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
+    const customAlert = countdownText.parentElement;
+
+    customAlert.style.display = "block";
+    countdownText.textContent = "Are you really, really sure?";
+    customAlert.classList.add("question-alert")
+
+    const yesButton = document.createElement("button");
+    yesButton.textContent = "Yes";
+    yesButton.classList.add("question-button")
+
+    const noButton = document.createElement("button");
+    noButton.textContent = "No";
+    noButton.classList.add("question-button")
+
+    yesButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: Yes";
+    });
+
+    noButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: No";
+    });
+
+    customAlert.appendChild(yesButton);
+    customAlert.appendChild(noButton);
+  }
+
+  function Question4() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
+    const customAlert = countdownText.parentElement;
+
+    customAlert.style.display = "block";
+    countdownText.textContent = "Are you really, really, really sure? (final time i promise)";
+    customAlert.classList.add("question-alert")
+
+    const yesButton = document.createElement("button");
+    yesButton.textContent = "Yes";
+    yesButton.classList.add("question-button")
+
+    const noButton = document.createElement("button");
+    noButton.textContent = "No";
+    noButton.classList.add("question-button")
+
+    yesButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: Yes";
+    });
+
+    noButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: No";
+    });
+
+    customAlert.appendChild(yesButton);
+    customAlert.appendChild(noButton);
+  }
+  function Question5() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--question");
+    const customAlert = countdownText.parentElement;
+
+    customAlert.style.display = "block";
+    countdownText.textContent = "Are you really, really, really, really sure? (I lied)";
+    customAlert.classList.add("question-alert")
+
+    const yesButton = document.createElement("button");
+    yesButton.textContent = "Yes";
+    yesButton.classList.add("question-button")
+
+    const noButton = document.createElement("button");
+    noButton.textContent = "No";
+    noButton.classList.add("question-button")
+
+    yesButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: Yes";
+    });
+
+    noButton.addEventListener("click", function () {
+        customAlert.style.display = "none";
+        alertMessage.textContent = "You answered: No";
+    });
+
+    customAlert.appendChild(yesButton);
+    customAlert.appendChild(noButton);
+  }
+  function Countdown2() {
+    const { countdownText, alertMessage } = createCustomAlert("alert-message--countdown");
+    const customAlert = countdownText.parentElement;
+
+    customAlert.style.display = "block";
+
+    let count = 5;
+    countdownText.textContent = count;
+
+    const countdownInterval = setInterval(function () {
+        if (count > 1) {
+            count--;
+            countdownText.textContent = count;
+        } else {
+            clearInterval(countdownInterval);
+            countdownText.style.display = "none";
+            alertMessage.style.display = "block"; 
+
+            setTimeout(() => {
+                customAlert.style.display = "none";
+            }, 2000);
+        }
+    }, 1000);
+  }
+  function AboutToRun() {
+    const { text, alertMessage } = createCustomAlert("alert-message--runaway");
+    const customAlert = text.parentElement;
+
+    customAlert.style.display = "block";
+    countdownText.textContent = "OMG it's running away running!!";
+    customAlert.classList.add("question-alert")   
   }
 
   toggleButton.addEventListener("click", toggleAction);

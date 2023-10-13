@@ -29,7 +29,7 @@ main {
 
 .button {
   position: absolute;
-  top: 59%;
+  top: 55%;
   right: 1%;
   width: 315px;
   height: 55px;
@@ -161,6 +161,8 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -183,4 +185,9 @@ header {
 .alert-message--question {
   color: blue;
   font-size: 1rem;
+}
+
+.question-button {
+  width: 80px;
+  margin-left: 15px;
 }/*# sourceMappingURL=styles.css.map */
