@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+  }
+  
+  a {
+
+  }
+  
+  .buttondance{
+    position: absolute;
+    top:59%;
+    right:1%;
+    width: 315px;
+    height: 55px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 3.125rem;
+    z-index: 10;
+
+  }
+  #nav-bar{
+    background-color: #ffffff;
+    padding-left: 15%;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .logo {
+    position: absolute;
+    left: 0;
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+  }
+  
+  .header-left {
+    padding-left: 1.25rem;
+  }
+  
+  .header-right {
+    padding-right: 25%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero {
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    text-align: center;
+    border-bottom: solid 1px #666666;
+  }
+  
+  main {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100vh;
+    background: #eeeeee;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 2.1875rem;
+    padding-left: 8rem;
+  }
+  
+  .card {
+    display: flex;
+    width: 75%;
+    height: 10.5rem;
+    margin: 0.625rem;
+    box-shadow: 3px 3px 3px #aaaaaa;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+
+  }
+  .yellowline{
+    top: 24%;
+    position: absolute;
+    left: 17%;
+  }
+
+.twosquare{
+    position: absolute;
+    right: 36%;
+    top: 13%;
+}
+  .card__content {
+    flex: 0 0 100%;
+    display: flex;
+    justify-self: end;
+    text-align: center;
+    padding-left: 2rem;
+    font-size: 26px;
+  }
+  
+  .card__title {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-left: 2rem;
+    padding-top: 1.9375rem;
+    display: flex;
+    justify-self: end;
+    font-size: 12px;
+  }
+  
+  .activity-list {
+    background: #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: white;
+  }
+
+  .danika{
+    position: absolute;
+    left: 260px;
+    top: 35%;
+    width: 45%;
+    padding-left: 5rem;
+    line-height: 25px;
+  }
+  .danika2{
+    position: absolute;
+    left: 260px;
+    top: 62%;
+    width: 45%;
+    padding-left: 5rem;
+    line-height: 25px;
+  }
+  .danika3{
+    position: absolute;
+    left: 260px;
+    top: 80%;
+    width: 45%;
+    padding-left: 5rem;
+    line-height: 25px;
+  }
+  
+  .danika__header{
+    font-weight: bold;
+
+  }
+
+  .danika__text{
+
+  }
+  .activity-list > * {
+    flex: 0 0 100%;
+  }
+  .blueboy{
+    width: 100px;
+    height: 18%;
+  }
+  
+  .activity {
+    width: 18.75rem;
+    height: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+   
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #999999;
+  }
+  .activity--long {
+    width: 18.75rem;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #999999;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background: #999999;
+    border-top: solid 1px #666666;
+    padding: 1.5625rem;
+  }
+  
+  .header-left {
+    align-self: left;
+  }
+  
+  .header-right {
+    align-self: right;
+  }
+  
+  .footer-left {
+    align-self: right;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    header {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .header-left,
+    .header-right {
+      display: none;
+    }
+  
+    .hero {
+      height: 40vw;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(69, 69, 70);
+}
+
+
+.wrapper {
+    width: 1000px;
+    height: 1000px;
+}
+
+.yes-btn{
+    position:absolute;
+} */
