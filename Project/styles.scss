@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background: #ffffff;
-  }
-  
-  a {
-
   }
   
   .buttondance{
@@ -34,18 +29,18 @@ body {
     background-color: #ffffff;
     padding-left: 15%;
   }
+
   .header-left {
     display: flex;
     align-items: center;
   }
-  
 
   .logo {
     position: absolute;
     left: 0;
   }
 
-  .sidebar {
+  .leftsidebar {
     position: absolute;
     left: 0;
   }
@@ -59,17 +54,7 @@ body {
     display: flex;
     align-items: center;
   }
-  
-  .hero {
-    height: 18.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #eeeeee;
-    text-align: center;
-    border-bottom: solid 1px #666666;
-  }
-  
+
   main {
     display: flex;
     justify-content: flex-end;
@@ -127,7 +112,7 @@ body {
     font-size: 12px;
   }
   
-  .activity-list {
+  .right-sidebar {
     background: #dddddd;
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +120,7 @@ body {
     background-color: white;
   }
 
-  .danika{
+  .bodytext{
     position: absolute;
     left: 260px;
     top: 35%;
@@ -143,7 +128,7 @@ body {
     padding-left: 5rem;
     line-height: 25px;
   }
-  .danika2{
+  .bodytext2{
     position: absolute;
     left: 260px;
     top: 62%;
@@ -151,7 +136,7 @@ body {
     padding-left: 5rem;
     line-height: 25px;
   }
-  .danika3{
+  .bodytext3{
     position: absolute;
     left: 260px;
     top: 80%;
@@ -160,42 +145,16 @@ body {
     line-height: 25px;
   }
   
-  .danika__header{
+  .bodytext__header{
     font-weight: bold;
-
   }
 
-  .danika__text{
-
-  }
   .activity-list > * {
     flex: 0 0 100%;
   }
   .blueboy{
     width: 100px;
     height: 18%;
-  }
-  
-  .activity {
-    width: 18.75rem;
-    height: 9.375rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-   
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #999999;
-  }
-  .activity--long {
-    width: 18.75rem;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #999999;
   }
   
   footer {
@@ -214,29 +173,6 @@ body {
     align-self: right;
   }
   
-  .footer-left {
-    align-self: right;
-  }
-  
-  @media (max-width: 768px) {
-    main {
-      flex-direction: column;
-    }
-  
-    header {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .header-left,
-    .header-right {
-      display: none;
-    }
-  
-    .hero {
-      height: 40vw;
-    }
-  }
   
 
 
@@ -248,31 +184,3 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: rgb(69, 69, 70);
-}
-
-
-.wrapper {
-    width: 1000px;
-    height: 1000px;
-}
-
-.yes-btn{
-    position:absolute;
-} */

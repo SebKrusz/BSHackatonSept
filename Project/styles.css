@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+}
+
+.buttondance {
+  position: absolute;
+  top: 59%;
+  right: 1%;
+  width: 315px;
+  height: 55px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 3.125rem;
+  z-index: 10;
+}
+
+#nav-bar {
+  background-color: #ffffff;
+  padding-left: 15%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+}
+
+.leftsidebar {
+  position: absolute;
+  left: 0;
+}
+
+.header-left {
+  padding-left: 1.25rem;
+}
+
+.header-right {
+  padding-right: 25%;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background: #f7f6f6;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 2.1875rem;
+  padding-left: 8rem;
+}
+
+.card {
+  display: flex;
+  width: 75%;
+  height: 10.5rem;
+  margin: 0.625rem;
+  box-shadow: 3px 3px 3px #aaaaaa;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.yellowline {
+  top: 24%;
+  position: absolute;
+  left: 17%;
+}
+
+.twosquare {
+  position: absolute;
+  right: 36%;
+  top: 13%;
+}
+
+.card__content {
+  flex: 0 0 100%;
+  display: flex;
+  justify-self: end;
+  text-align: center;
+  padding-left: 2rem;
+  font-size: 26px;
+}
+
+.card__title {
+  flex: 0 0 100%;
+  text-align: center;
+  padding-left: 2rem;
+  padding-top: 1.9375rem;
+  display: flex;
+  justify-self: end;
+  font-size: 12px;
+}
+
+.right-sidebar {
+  background: #dddddd;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: white;
+}
+
+.bodytext {
+  position: absolute;
+  left: 260px;
+  top: 35%;
+  width: 45%;
+  padding-left: 5rem;
+  line-height: 25px;
+}
+
+.bodytext2 {
+  position: absolute;
+  left: 260px;
+  top: 62%;
+  width: 45%;
+  padding-left: 5rem;
+  line-height: 25px;
+}
+
+.bodytext3 {
+  position: absolute;
+  left: 260px;
+  top: 80%;
+  width: 45%;
+  padding-left: 5rem;
+  line-height: 25px;
+}
+
+.bodytext__header {
+  font-weight: bold;
+}
+
+.activity-list > * {
+  flex: 0 0 100%;
+}
+
+.blueboy {
+  width: 100px;
+  height: 18%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #999999;
+  border-top: solid 1px #666666;
+  padding: 1.5625rem;
+}
+
+.header-left {
+  align-self: left;
+}
+
+.header-right {
+  align-self: right;
+}/*# sourceMappingURL=styles.css.map */
