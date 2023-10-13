@@ -27,7 +27,7 @@ main {
   background: #f7f6f6;
 }
 
-.buttondance {
+.button {
   position: absolute;
   top: 59%;
   right: 1%;
@@ -153,4 +153,34 @@ header {
 .right-sidebar {
   background: #dddddd;
   background-color: white;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.countdown {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.alert-message {
+  font-size: 2rem;
+}
+.alert-message--countdown {
+  font-weight: 500;
+  color: red;
+  display: none;
+}
+.alert-message--question {
+  color: blue;
+  font-size: 1rem;
 }/*# sourceMappingURL=styles.css.map */
